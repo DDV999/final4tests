@@ -66,4 +66,9 @@ public class ScenarioSteps {
     public void stepClickButtonClose() {
         insuranceSteps.stepClickButtonClose();
     }
+
+    @When("^проверка введенных значений$")
+    public void stepAssertcheck() {
+        formalizationSteps.assertscheck();
+    }
 }

@@ -9,7 +9,7 @@ public class InsuranceSteps {
         new InsurancePage().buttonClose.click();
     }
 
-    @Step("Нажать на кнопку Страхование путешественников {0}")
+    @Step("Нажать на кнопку Страхование путешественников")
     public void stepClickButtonInsurance() {
         new InsurancePage().buttonTravelInsurance.click();
     }

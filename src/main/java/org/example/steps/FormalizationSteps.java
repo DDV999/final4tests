@@ -17,13 +17,18 @@ public class FormalizationSteps {
         fields.forEach(this::fillField);
     }
 
-    @Step("Нажать на кнопку Продолжить {0}")
+    @Step("Нажать на кнопку Продолжить")
     public void stepClickButtonNext() {
         new FormalizationPage().next.click();
     }
 
-    @Step("Выбрать пол Мужской {0}")
+    @Step("Выбрать пол Мужской")
     public void stepSelectSexM() {
         new FormalizationPage().sexM.click();
+    }
+
+    @Step("Проверка значений в полях")
+    public void assertscheck() {
+        new FormalizationPage().checkAsserts();
     }
 }

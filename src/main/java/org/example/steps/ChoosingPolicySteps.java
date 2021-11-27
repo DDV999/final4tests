@@ -10,7 +10,7 @@ import static org.example.steps.BaseSteps.driver;
 
 public class ChoosingPolicySteps {
 
-    @Step("Нажать на кнопку Минимальная {0}")
+    @Step("Нажать на кнопку Минимальная")
     public void stepClickButtonMin() throws InterruptedException {
         sleep(5000);
         ArrayList tabs2 = new ArrayList(driver.getWindowHandles());
@@ -18,7 +18,7 @@ public class ChoosingPolicySteps {
         new ChoosingPolicyPage().buttonMin.click();
     }
 
-    @Step("Нажать на кнопку Оформить {0}")
+    @Step("Нажать на кнопку Оформить")
     public void stepClickButtonCheckout() {
         new ChoosingPolicyPage().buttonCheckout.click();
     }
